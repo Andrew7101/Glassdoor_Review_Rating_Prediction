@@ -1,42 +1,42 @@
 # Glassdoor Review Rating Prediction
 
-This repository contains a machine learning project designed for a prediction competition. The task involves predicting overall ratings of companies from Glassdoor reviews based on features constructed from the data. The model achieved **1st place** in the competition with an impressive accuracy of **0.87**.
+This repository contains the code and results for a prediction competition focused on predicting review ratings from Glassdoor data. The competition involved constructing features from textual reviews and training machine learning models to achieve the best performance measured by mean squared error (MSE). 
 
 ## Project Overview
-The competition provided training and test datasets with varying sizes:
-- Training sets:
-  - Small: 100,000 observations.
-  - Large: 500,000 observations (not a superset of the small set).
-- Test set: 100,000 observations (without response variable).
+In this competition, I utilized advanced machine learning techniques to predict overall review ratings from structured and textual data. The tasks included:
+1. Preprocessing textual reviews and constructing meaningful features.
+2. Building and optimizing machine learning models, including a BERT-based regression model.
+3. Reporting performance metrics (MSE and R²) for training and test sets.
+4. Visualizing the model structure and input features.
 
-Participants were required to:
-1. Handle missing feature values to ensure predictions for all test set entries.
-2. Construct features and train machine learning models.
-3. Evaluate performance using mean squared error (MSE) and R².
+### Achievements
+- **Ranked 1st** in the competition with a score of **0.87** (R²).
+- Demonstrated expertise in:
+  - Preprocessing and tokenizing a dataset of 600,000 reviews for compatibility.
+  - Leveraging deep learning frameworks and optimization techniques for accurate predictions.
 
-### Tasks Performed
-1. **Feature Engineering**:
-   - Processed Glassdoor review data to create predictive features.
-   - Addressed missing values to include all test set entries.
-2. **Model Training and Evaluation**:
-   - Trained models using both training datasets.
-   - Achieved 1st place in the competition with **0.87 accuracy**.
-   - Reported metrics:
-     - MSE on the test set.
-     - R² on the training set.
-3. **Model Visualization**:
-   - Included a figure illustrating the model structure and input features.
+### Competition Details
+- **Training Data**: Two datasets with 100,000 and 500,000 observations, not subsets of each other.
+- **Test Data**: 100,000 observations without response variables.
+- **Challenge**: Make predictions for all test observations, even with missing feature values.
 
-## Results
-- **Accuracy**: 0.87
-- **Rank**: 1st place in the competition
+### Key Techniques
+- Constructed features using advanced embedding techniques.
+- Utilized a BERT regression model for textual data analysis.
+- Applied preprocessing, tokenization, and imputation strategies for missing values.
 
-## Files
-- `model_training.py`: Code for feature engineering, model training, and evaluation.
-- `results_visualization.pdf`: Contains the figure showing the model structure and features used as inputs.
-- `predictions.csv`: Final predictions for the test set.
+### Included Files
+1. **`prediction_model.py`**: Python file containing the preprocessing steps, model training, and prediction logic.
+2. **`model_structure.pdf`**: A figure illustrating the model structure and input features.
+3. **`competition_results.pdf`**: Detailed competition results, including evaluation metrics and ranking.
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/Glassdoor_Review_Rating_Prediction.git
+### How to Run
+1. Clone this repository.
+2. Install required dependencies listed in `requirements.txt`.
+3. Run the Python script to reproduce the results.
+
+### Insights
+This project highlights the importance of:
+- Advanced NLP techniques in predictive modeling.
+- Effective handling of missing data and large-scale datasets.
+- Model explainability through visualization and metrics reporting.
